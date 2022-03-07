@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+   <head>
+      <!--metadata declarations-->
+      <title>Assignment 3</title>
+      <meta charset="utf-8">
+      <meta name="description" content="This is Assignment 3.">
+      <meta name="keywords" content="HTML, HTML5, Advanced HTML, HTML Forms">
+      <meta name="robots" content="noindex, nofollow">
+      <meta name="author" content="Mikayla Johnson">
+   </head>
+   <body>
+      <!--start of body-->
+      <div id="wrapper" class="wrapper">
+         <section id="html-forms" class="main-section">
+            <h3>HTML Form</h3>
+            <!--A header was not required however I felt it looked better with one. -->
+            <form action="somepage.php" method="get">
+               <div id="fn-container" class="form-elm">
+                  <!--Container for first name field -->
+                  <label for="FirstName">First name</label>
+                  <br><input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name" required>
+                  <!--input type "text" = allows for user input of any characters-->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="ln-container" class="form-elm">
+                  <!--Container for last name field-->
+                  <br><label for="LastName">Last Name</label>
+                  <br><input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name" required>
+                  <!--input type "text" = allows for user input of any characters-->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="email-container" class="form-elm">
+                  <!--Container for email field-->
+                  <br><label for="email">Email</label>
+                  <br><input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
+                  <!--input type "text" = allows for user input of any characters-->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="pass-container" class="form-elm">
+                  <!--Container for Password field-->
+                  <br><label for="pass">Password</label>
+                  <br><input type="password" name="pass" id="pass" required>
+                  <!--input type "text" = allows for user input of any characters-->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="intro-container" class="form-elm">
+                  <!--Container for introductory text field -->
+                  <!-- -->
+                  <br><label for="intro">Introductory Text</label>
+                  <br>
+                  <textarea name="intro" id="intro" placeholder="Enter text here">
+						Tell us a bit about yourself!
+					</textarea>
+                  <!--"textarea" tag = provides a resizeable text box that allows for user input -->
+               </div>
+               <div id="date-container" class="form-elm">
+                  <!--Container for birthdate field -->
+                  <br><label for="birthdate">Date of Birth</label>
+                  <br><input type="date" name="birthdate" id="birthdate" required>
+                  <!--input type "date" = enables a calendar type of date input by user-->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="radio-container" class="form-elm">
+                  <!--Container for Gender field-->
+                  <!--Input type "radio" = allows only one choice to be selected out of the limited selection provided within a container -->
+                  <p>What is your gender?</p>
+                  <label for="female">
+                  <input type="radio" name="gender" id="female" value="female" checked>
+                  Female
+                  </label>
+                  <label>
+                  <br><input type="radio" name="gender" id="male" value="male">
+                  Male
+                  </label>
+                  <label>
+                  <br><input type="radio" name="gender" id="other" value="other">
+                  Prefer not to say
+                  </label>
+               </div>
+               <div id="address-container" class="form-elm">
+                  <!--Container for Address field -->
+                  <br><br><label for="address">Address</label>
+                  <br><input type="text" name="address" id="address" placeholder="Enter your address here">
+                  <!--input type "text" = allows for user input of any characters-->
+               </div>
+               <div id="city-container" class="form-elm">
+                  <!--container for City field -->
+                  <br><label for="city">City</label>
+                  <br><input type="text" name="city" id="city" placeholder="Enter your city here">
+                  <!--input type "text" = allows for user input of any characters-->
+               </div>
+               <div id="province-drop-container" class="form-elm">
+                  <!--container for Province dropdown -->
+                  <br><label for="province">Province:</label>
+                  <br>
+                  <select name="province" id="province">
+                     <option value="alberta">Alberta</option>
+                     <option value="british columbia">British Columbia</option>
+                     <option value="ontario" selected>Ontario</option>
+                     <!--"select" tag = initiates a dropdown menu function that allows for user selection -->
+                  </select>
+               </div>
+               <div id="country-drop-container" class="form-elm">
+                  <!--container for Country dropdown -->
+                  <br><label for="country">Country:</label>
+                  <br>
+                  <select name="country" id="country">
+                     <option value="france">France</option>
+                     <option value="united states">United States</option>
+                     <option value="canada" selected>Canada</option>
+                     <!--"select" tag = initiates a dropdown menu function that allows for user selection -->
+                  </select>
+               </div>
+               <div id="postal-container" class="form-elm">
+                  <br><label for="postal">Postal Code</label>
+                  <br><input type="text" name="postal" id="postal" placeholder="Enter your postal code here" required>
+                  <!--input type "date" = enables a calendar type of date input by user-->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="tel-container" class="form-elm">
+                  <br><label for="phone">Mobile Number</label>
+                  <br><input type="tel" id="phone" name="phone" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
+                  <!--input type "tel" = requires a phone number to be provided in the pattern requested, which is 000-000-0000. -->
+                  <!--Required attribute = form cannot be completed until field is filled out-->
+               </div>
+               <div id="hobbies-container" class="form-elm">
+                  <!--container for all Hobbies fields-->
+                  <h3>Hobbies/Interests:</h3>
+                  <label for="reading"><input type="checkbox" name="hobbies" id="reading" value="reading">Reading</label><br>
+                  <!--input type "checkbox" = allows multiple choices to be selected out of the limited selection provided within a containe-->
+                  <label for="cooking"><input type="checkbox" name="hobbies" id="cooking" value="cooking">Cooking</label><br>
+                  <!--input type "checkbox" = allows multiple choices to be selected out of the limited selection provided within a containe-->
+                  <label for="traveling"><input type="checkbox" name="hobbies" id="traveling" value="traveling">Traveling</label><br>
+                  <!--input type "checkbox" = allows multiple choices to be selected out of the limited selection provided within a containe-->
+                  <label for="walking"><input type="checkbox" name="hobbies" id="walking" value="walking"> Walking</label><br>
+                  <!--input type "checkbox" = allows multiple choices to be selected out of the limited selection provided within a containe-->
+               </div>
+               <div id="website-container" class="form-elm">
+                  <!--Container for Website field-->
+                  <br><label for="ur">Website URL:</label>	
+                  <input type="url" name="ur" id="ur" ><br>
+                  <!--input type "url" = requires user input to be a URL.-->
+               </div>
+               <button type="submit">Submit</button>
+               <!--Submit button-->
+               <button type="reset">Reset</button>
+               <!--Reset button-->
+            </form>
+         </section>
+      </div>
+   </body>
+   <!--End of body-->
+</html>
