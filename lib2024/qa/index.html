@@ -4,12 +4,17 @@
 	<title>LIB2024-QA </title>
 </head>
 <body>
+	<header id="header">
+		<h1>QA for LIB2024</h1>
+	</header>
+<main id="main">
+
 <dl>
-<dt><b>&star;1) What are the three components of Web?</b></dt>
-<dd></dd>
+<dt><b>1) What are the three components of Web?</b></dt>
+<dd>The three components of Web are HTML, CSS, and JavaScript.</dd>
 <br>
-<dt><b>&star;2)Define version control and give one example.</b></dt>
-<dd></dd>
+<dt><b>2)Define version control and give one example.</b></dt>
+<dd>Version control is a system which records changes to your files over time. GitHub is a version control software.</dd>
 <br>
 <dt><b>3) What tag is used to create the title of a web page? Give an example.</b></dt>
 <dd> &lt;title&gt; within the &lt;head&gt; portion of the code.</dd>
@@ -18,8 +23,8 @@
 <dd>The tag &lt;p&gt; is used. Any text written between &lt;p&gt; and &lt;/p&gt; will be formatted as a paragraph.</dd>
 <p>Like this!</p>
 <br>
-<dt><b>&star;5) Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason?</b></dt>
-<dd></dd>
+<dt><b>5) Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason?</b></dt>
+<dd>The odd one out is &lt;span&gt; because it is a meaningless element, whereas &lt;p&gt;, &lt;a&gt;, and &lt;i&gt; all are specific elements, for example &lt;a&gt; tag links to a website.</dd>
 <br>
 <dt>6) <b>What are the tags required to create a navigation list in HTML? </b></dt>
 <dd>&lt;nav&gt; is the root tag for a navigation list, followed by &lt;ul&gt;  for an unordered list, &lt;ol&gt; for an ordered (numbered) list, and &lt;dl&gt; for a descriptive list. Within unordered and ordered lists, entries on the list are identified with the tag &lt;il&gt;; for descriptive lists, it is &lt;dd&gt;.</dd>
@@ -30,10 +35,67 @@
 <dt><b>8) Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt; and state the reason.</b></dt>
 <dd>the odd one out is &lt;b&gt; as that is used to bold output text and has nothing to do with creating tables like the other three.</dd>
 <br>
-<dt><b> </b></dt>
-<dd></dd>
+<dt><b>9) Give an example of color picker input.</b></dt>
+<dd>An example of color picker input would be &lt;input type="color" name="co" id="co"&gt;</dd>
 <br>
+<dt><b>10) What is the use of name and value attributes? Give two examples.</b></dt>
+<dd>The use of name and value defines what the data is. For example, the name can be place or fav-color; the equivalent value is the actual place or color, for example Scotland or purple.</dd>
+<br>
+<dt><b>11) Give an example of inline style.</b></dt>
+<dd>Inline style is included in the tag. For example, &lt;p style="color:blue;font-size:18px;"&gt;</dd>
+<br>
+<dt><b>12) How would you link an external style sheet? Give example.</b></dt>
+<dd>You would link the external style sheet by creating a .css file, which is the style sheet in a css folder which is included within the folder that contains the index. For example, the folder for the whole assignment is Assignment 4, and within Assignment 4's main folder is the index and the css folder, which contains the css style sheet.</dd>
+<br>
+<dt><b>13) Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.</b></dt>
+<dd>position: absolute;<br>
+left: 50%;<br>
+top: 50%;<br>
+width: 200px;<br>
+height: 200px;<br>
+margin: -100px 0 0 -100px;</dd>
+<br>
+<dt><b>14) Create CSS keyframes block called "spin" that rotates an element.</b></dt>
+<dd>@keyframes spin {<br>
+from {<br>
+transform: rotate(0deg);<br>
+}<br>
+to {<br>
+transform: rotate(360deg);<br>
+}</dd>
+<br>
+<dt><b>15) Create CSS animation block to rotate an element that has the following properties:<br>
+	<li>class "rotate me"</li>
+	<li>It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</li>
+	</b></dt>
+<dd>&lt;animation class="rotate-me"&gt;<br>
+animation: <br>
+spin 0.5s linear 5x,<br>
+@keyframes spin {<br>
+from {<br>
+transform: rotate(0deg);<br>
+}<br>
+to {<br>
+transform: rotate(360deg);<br>
+}<br>
+&lt;/animation&gt;</dd>
+<br>
+<dt><b>16) How would you include create an alert with string "I love JavaScript" using JavaScript?</b></dt>
+<dd>.alert("I love JavaScript");</dd>
+<br>
+<dt><b>17) How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?</b></dt>
+<dd>document.getElementById("fade-me").delay(300).fadeout(400);</dd>
+<br>
+<dt><b>18) How would you select all elements with class "my-class" using Javascript and Jquery?</b></dt>
+<dd>document.getElementsByClassName("my-class");</dd>
+<br>
+<dt><b>19) Give an example of input field that takes phone number with format "123-456-7890"?</b></dt>
+<dd>&lt;input type="tel" name="usertel"&gt;</dd>
+<br>
+<dt><b>20)  Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason.</b></dt>
+<dd>I prefer HTML as it is straightforward and simple.</dd>
+</dl>
 
-
+</main>
 </body>
 </html>
